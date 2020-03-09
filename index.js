@@ -7,6 +7,10 @@ fetch(
   .then(data => {
     console.log(data);
     console.log(data.main.temp);
+    
+     const ikon = data.weather[0].icon;
+    console.log(ikon)
+    document.querySelector(".icon").setAttribute("src", "http://openweathermap.org/img/w/" + ikon + ".png")
 
     var temp = document.querySelector(".temp");
     temp.innerHTML = "Zurzeit ist das Wetter " + Math.round(data.main.temp) + "°" + " Grad";
