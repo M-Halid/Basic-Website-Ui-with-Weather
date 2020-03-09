@@ -1,5 +1,5 @@
 fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=Leipzig&units=Metric&appid=b00c652c4b84965eb16165112217a4a6"
+    "https://api.openweathermap.org/data/2.5/weather?q=Leipzig&units=Metric&appid=b00c652c4b84965eb16165112217a4a6"
   )
   .then(response => {
     return response.json();
