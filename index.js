@@ -13,7 +13,7 @@ fetch(
     document.querySelector(".icon").setAttribute("src", "https://openweathermap.org/img/w/" + ikon + ".png")
 
     var temp = document.querySelector(".temp");
-    temp.innerHTML = "Zurzeit ist das Wetter " + Math.round(data.main.temp) + "°" + " Grad";
+    temp.innerHTML = "Das Wetter in Leipzig ist zurzeiz" + Math.round(data.main.temp) + "°" + " Grad";
 
     // "http://openweathermap.org/img/w/04n.png");
   });
